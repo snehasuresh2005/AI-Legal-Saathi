@@ -1,4 +1,4 @@
-Put your gemini api key here (GEMINI_API_KEY = "GOOGLE-API-KEY")
+Put your gemini api key here (genai.configure(api_key=os.getenv("GOOGLE-API-KEY")))
 If you dont have a api key you can follow these steps to get one:
    Log in to Google AI Studio:
     Navigate to the Google AI Studio website. You'll need to sign in with your Google Account. If it's your first time, you'll be prompted to agree to the terms of service.
