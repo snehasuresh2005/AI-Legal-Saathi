@@ -109,7 +109,7 @@ if st.session_state.current_chat is None:
     # Landing Page
     st.markdown("""
     <div style="text-align:center; padding:60px;">
-        <h1 style="color:#a855f7;">📜 AI Legal Document Simplifier</h1>
+        <h1 style="color:#a855f7;">📜 AI Legal Saathi</h1>
         <p style="font-size:1.2rem; color:#ccc;">
             Upload contracts, ask questions, and get clear answers in plain English.
         </p>
@@ -192,4 +192,5 @@ else:
         prompt = f"Summarize this legal document in simple English. Highlight obligations, deadlines, and risks.\n\n{docs_text}"
         summary = call_gemini(prompt, temperature=temperature)
         chat["messages"].append(("assistant", summary))
+
         st.rerun()
