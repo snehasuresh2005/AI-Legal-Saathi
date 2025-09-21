@@ -12,7 +12,7 @@ import docx
 # ========================
 # 🔑 Configure Gemini
 # ========================
-genai.configure(api_key=os.getenv("AIzaSyAkkcZb_iR9Ffe6z_xgPbfLaP5-T2P6puA"))
+genai.configure(api_key=os.getenv("GOOGLE-API-KEY"))
 LLM_MODEL = "gemini-1.5-flash"
 
 def call_gemini(prompt: str, model: str = LLM_MODEL, temperature: float = 0.2) -> str:
@@ -169,6 +169,7 @@ if uploaded_files:
             )
 else:
     st.info("👆 Please upload a PDF, DOCX, or TXT document to begin.")
+
 
 
 
