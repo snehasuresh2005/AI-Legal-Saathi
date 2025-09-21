@@ -10,7 +10,7 @@ from datetime import datetime
 # Config
 # ========================
 # Use st.secrets or os.getenv for API key
-genai.configure(api_key=os.getenv("AIzaSyD1OFpzWqmGu7mPDaWOoRcPdeFsuXY2FRc"))
+genai.configure(api_key=os.getenv("AIzaSyAkkcZb_iR9Ffe6z_xgPbfLaP5-T2P6puA"))
 LLM_MODEL = "gemini-1.5-flash"
 
 
@@ -194,4 +194,5 @@ else:
         chat["messages"].append(("assistant", summary))
 
         st.rerun()
+
 
