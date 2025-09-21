@@ -69,7 +69,7 @@ def extract_text(file) -> str:
 # 🌐 Streamlit UI
 # ========================
 st.set_page_config(page_title="AI Legal Simplifier", layout="wide")
-st.title("📜 AI Legal Document Saathi")
+st.title("📜 AI Legal Saathi")
 st.write("Upload a legal document, ask questions, or get AI-powered summaries and insights.")
 
 # Sidebar controls
@@ -169,5 +169,6 @@ if uploaded_files:
             )
 else:
     st.info("👆 Please upload a PDF, DOCX, or TXT document to begin.")
+
 
 
